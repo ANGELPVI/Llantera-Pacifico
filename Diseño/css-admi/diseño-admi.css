@@ -1,0 +1,198 @@
+/*Encabezado*/
+*{
+	padding: 0px;
+	margin:0px;
+}
+body{
+	background: #fff;
+}
+
+header{
+	width: 100%;
+	height: 300px;
+	background: #081073;
+}
+.usuario{
+	position:absolute;
+	width: 100px;
+	height: 50px;
+	color: #ffffff;
+	left:45%;
+	margin-top: 17%;
+	text-align: center;
+	
+}
+.img{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background:#1123CC;
+	left: 45%;
+	margin-top: 8%;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 100%;
+	border: 5px solid  #ffffff;
+	box-shadow:  20px 20px 50px  black;
+	
+}
+.icon-user{
+	font-size: 60px;
+}
+
+
+/*Barra de navegacion*/
+.container a{
+	text-decoration: none;
+}
+
+.encabezado{
+	width: 100%;
+	background:#081073;
+	color: #ffffff;
+	overflow: hidden;
+}
+.titulo{
+	font-size: 40px;
+	color: #fff;
+	position: absolute;
+	left: 30%;
+	top:10px;
+	font-family: 'Anton', sans-serif;
+}
+.wrapper{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+.encabezado .logo{
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	font-weight: bold;
+	float: left;
+}
+.encabezado .barra{
+float: right;
+line-height: 20px;
+}
+.encabezado .barra a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding:10px 20px;
+	line-height: normal;
+	font-size: 18px;
+	font-weight: bold;
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+	    -ms-transition: all 500ms ease;
+	     -o-transition: all 500ms ease;
+	        transition: all 500ms ease;
+}
+.encabezado .barra a:hover{
+	background: #f56f3a;
+	border-radius: 50px;
+
+}
+
+
+/*Hacer responcivo*/
+@media screen and (max-width: 1100px){
+header{
+	display: none;
+}
+.encabezado .barra a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding:20px 30px;
+	line-height: normal;
+	font-size: 18px;
+	font-weight: bold;
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+	    -ms-transition: all 500ms ease;
+	     -o-transition: all 500ms ease;
+	        transition: all 500ms ease;
+}
+.encabezado .logo{
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	font-weight: bold;
+	position: relative;
+	left: 27px;
+}
+
+}
+
+/*menu redondo*/
+.container div{
+ float: left;
+ width: 250px;
+ height: 250px;
+ font-size: 4em;
+ background-color: #1123CC;
+ margin: 20px;
+ border: solid 5px black;
+ border-radius: 50%;
+ color: #ffffff;
+ text-align: center;
+ box-shadow:  20px 20px 50px  black; 
+}
+.container div:hover{
+	background:#2962FF;
+	border: 10px solid black;
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+	    -ms-transition: all 500ms ease;
+	     -o-transition: all 500ms ease;
+	        transition: all 500ms ease;
+}
+
+
+
+
+/*Globo de converzación*/
+.globo{
+   float: left;
+   width: 100px;
+   height: 50px;
+   left: 140%;
+   top: -40px;
+   background: blue;
+   position: relative;
+   -moz-border-radius:    0px 10px 10px 10px;
+   -webkit-border-radius:  0px 10px 10px 10px;
+   border-radius:          0px 10px 10px 10px;
+   padding: 5px;
+   color:#fff;
+   font-size: 15px;
+   display: none;
+   
+   
+}
+.globo:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 0px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid blue;
+   border-bottom: 13px solid transparent;
+}
+.img:hover >.globo{
+	display: block;
+}
+
+
+/*Titulos de menú redondo*/
+.container h3{
+	font-family: 'Anton', sans-serif;
+	padding-top: 25px;
+}
+
