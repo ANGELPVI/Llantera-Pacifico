@@ -33,24 +33,25 @@ if ($error) {
 	header{
 		width: 100%;
 		height: 300px;
-		background: #081073;
-		color: #fff;
+		color: #ffffff;
 		font-family: 'Anton', sans-serif;
 		font-size: 60px;
 		text-align: center;
-		padding-top: 5%;
+		padding-top: 80px;
 }
-	.container{
-		margin: auto;
-
+	
+body{
+	background: #0575E6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .panel{
-	background: #1123CC;
+	background: rgba(56,229,99,0.6);
 	max-width: 400px;
 	height: 400px;
 	box-shadow: 10px 10px 8px black;
-	margin: auto;
 	border-radius: 5%;
+	
 }
 span{
 	color: #fff;
@@ -62,6 +63,9 @@ span{
 	text-align: center;
 	color: #fff;
 }
+.container{
+	margin-top:-3px;
+}
 </style>
 
 </head>
@@ -70,13 +74,13 @@ span{
 <header>
 	SERVICIOS Y LLANTAS EL PACÍFICO, S.A.
 </header>
-<br>
+
 <div class="container">
-	<div class="panel">
+	<div class="panel container justify-content-center">
 	<div class="panel-heading">Login</div>
 	<div class="panel-body">
 	<br>
-	<br>
+	
 		<form action="../Control/iniciar.php" method="post" class="form-horizontal">
 		<div class="form-group">
 		<label class="control-label  col-xs-1 col-sm-1 col-md-1 col-lg-1 col-lg-offset-1"><span class="icon-user"></span></label>
@@ -84,7 +88,7 @@ span{
 		<input type="text" name="usuario" placeholder="Usuario" id="usuario" class="form-control" autofocus>
 		</div>
 		</div>
-
+	<br><br>
 		<div class="form-group">
 		<label class="control-label  col-xs-1 col-sm-1 col-md-1 col-lg-1 col-lg-offset-1"><span class="icon-lock"></span></label>
 		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -102,6 +106,7 @@ span{
 	</div>
 	</div>
 </div>
+<br>
 <br>
 <script type="text/javascript" src="../Diseño/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../Diseño/js/bootstrap.min.js"></script>

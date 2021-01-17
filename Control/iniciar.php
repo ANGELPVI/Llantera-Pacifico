@@ -41,6 +41,7 @@ if ($_POST) {
 	}else {
 		// echo "No Existe el usuario";
 		header("location:../Control/iniciar.php?error=error");
+		
 	}
 
 	
